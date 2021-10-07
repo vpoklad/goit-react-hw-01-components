@@ -15,4 +15,5 @@ function FriendList({ friends }) {
     </ul>
   );
 }
+
 export default FriendList;

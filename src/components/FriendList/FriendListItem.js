@@ -1,5 +1,6 @@
 import s from './FriendListItem.module.css';
 import imageDefault from '../images/default.jpg';
+import PropTypes from 'prop-types';
 
 function FriendListItem({
   avatar = imageDefault,
@@ -16,4 +17,9 @@ function FriendListItem({
   );
 }
 
+FriendListItem.prototype = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  isOnline: PropTypes.bool,
+};
 export default FriendListItem;

@@ -3,11 +3,13 @@
 import user from './components/Profile/user.json';
 import statisticalData from './components/Statistics/statistic-data.json';
 import friends from './components/FriendList/friends.json';
+import transactions from './components/TransactionHistory/transactions.json';
 
 import Profile from './components/Profile/Profile';
 import Section from './components/Section/Section';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 function App() {
   return (
@@ -29,6 +31,10 @@ function App() {
 
       <Section title="Список друзей">
         <FriendList friends={friends} />
+      </Section>
+
+      <Section title="Список транзакций">
+        <TransactionHistory items={transactions} />
       </Section>
     </div>
   );
