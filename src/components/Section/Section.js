@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export default function Section({ title, children }) {
   return (
     <section className={s.section}>
-      {title && <h2>{title}</h2>}
+      {title && <h2 className={s.title}>{title}</h2>}
       {children}
     </section>
   );
