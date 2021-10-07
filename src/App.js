@@ -1,11 +1,13 @@
 // import './App.css';
 
-import user from './data/user.json';
-import statisticalData from './data/statistic-data.json';
+import user from './components/Profile/user.json';
+import statisticalData from './components/Statistics/statistic-data.json';
+import friends from './components/FriendList/friends.json';
 
 import Profile from './components/Profile/Profile';
 import Section from './components/Section/Section';
 import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
       <Section title="Статистика">
         <Statistics title="Upload stats" stats={statisticalData} />
         <Statistics stats={statisticalData} />
+      </Section>
+
+      <Section title="Список друзей">
+        <FriendList friends={friends} />
       </Section>
     </div>
   );
